@@ -1,0 +1,557 @@
+/* 
+font-family: 'Be Vietnam Pro', sans-serif;
+
+*/
+
+/* All Common CSS Start */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,h1,h2,h3,h4,h5,h6,p,span,a,label{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin-bottom: 0px;
+}
+.ptb{
+    padding: 100px 0px;
+}
+/* All Common CSS End */
+
+/* Header Section Start */
+.header-logo {
+    font-size: 35px;
+    color: #010d4c;
+    font-weight: 700;
+}
+.header-menu{
+    margin-left: 80px;
+}
+.header-menu li a {
+    color: #010d4c;
+    padding: 10px 16px !important;
+    font-weight: 600;
+    margin-right: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s;
+}
+.header-menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 14px;
+    width: 0%;
+    height: 2px;
+    background-color: #913bff;
+    transition: all .3s;
+}
+.header-menu li a:hover{
+    color: #913bff;
+}
+.header-menu li a:hover::after{
+    width: 81%;
+}
+.call-sec p{
+    font-size: 20px;
+    color: #335371;
+    font-weight: 400;
+    margin-right: 40px;
+}
+.call-sec p a{
+    color: #0066ff;
+}
+.call-sec p a:hover{
+    color: #024bb9;
+}
+.btn-primary{
+    background: #0066ff;
+    border-color: #0066ff;
+    padding: 15px 27px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 11px;
+}
+/* Header Section End */
+
+/* Banner section Start */
+.banner-sec{
+    background: url('../img/banner-bg.jpg') no-repeat center;
+    background-size: cover;
+    padding: 230px 0px;
+}
+.banner-content h1 {
+    font-size: 70px;
+}
+.banner-content p {
+    font-size: 22px;
+    color: #cfd1d6;
+    margin: 30px 0px;
+}
+.banner-content .btn-primary {
+    padding: 12px 48px;
+    font-size: 18px;
+    border-radius: 7px;
+}
+/* Banner section End */
+
+/* Project Counter Section Start */
+
+.p-count h3 {
+    font-size: 55px;
+    font-weight: 700;
+}
+.p-count p {
+    font-size: 19px;
+    font-weight: 400;
+    color: #6c6c6c;
+}
+/* Project Counter Section End */
+
+/* Product Section Start */
+.product .card-img-wrap{
+    position: relative;
+    overflow: hidden;
+}
+.product{
+    transition: all .4s;
+    cursor: pointer;
+}
+.product:hover{
+    transform: translateY(-5px);
+}
+.product .card-img-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: -34px;
+    right: -28px;
+    border-radius: 50%;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 110%;
+    width: 0px;
+    height: 0px;
+    background: #913bff;
+    z-index: 2;
+    transition: all .3s;
+}
+.product .card-img-wrap::before {
+    content: '\f061';
+    font-family: 'Font Awesome 6 Pro';
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 2px;
+    font-size: 22px;
+    z-index: 3;
+    width: 0px;
+    height: 33px;
+    opacity: 0;
+    text-align: center;
+    background-color: transparent;
+    transition-delay: .5s;
+    transition: all .3s;
+}
+.product:hover .card-img-wrap::after{
+    width: 100px;
+    height: 100px;
+    transition: all .2s;
+}
+.product:hover .card-img-wrap::before{
+    width: 50px;
+    opacity: 1;
+}
+.product-sec.ptb {
+    padding-bottom: 80px;
+}
+.product-heading {
+    margin-bottom: 20px;
+}
+.product-heading h4 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.product-heading p.heading {
+    font-size: 18px;
+    font-weight: 500;
+}
+.product-heading span {
+    font-weight: 700;
+}
+.product-heading h3 {
+    color: #a1a0a0;
+    font-size: 29px;
+    font-weight: 400;
+}
+.product-heading h1 {
+    font-size: 50px;
+    margin-top: 20px;
+}
+.product h5 {
+    font-size: 27px;
+    font-weight: 700;
+    color: #913bff;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.product p {
+    font-size: 20px;
+    transition: all .3s;
+}
+.product p:hover{
+    color: #913bff;
+}
+/* Product Section End */
+
+/* Feature section Start */
+.feature-sec{
+    background: url('../img/background1.jpg') no-repeat center;
+    background-size: cover;
+}
+.f-heading {
+    margin-bottom: 20px;
+}
+.f-heading h3 {
+    font-size: 35px;
+    font-weight: 400;
+}
+.f-heading h3 span {
+    font-weight: 600;
+}
+.f-heading p {
+    color: #646464;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.feature-box {
+    height: 350px;
+    border-radius: 12px !important;
+    box-shadow: -1px 7px 30px 0px rgba(220, 228, 228,.5);
+    transition: all .4s;
+}
+.feature-box:hover{
+    transform: translateY(-10px);
+}
+.feature-box span {
+    font-size: 40px;
+    color: #913bff;
+}
+.feature-box h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 25px 0;
+}
+.feature-box p {
+    color: #335371;
+    font-size: 18px;
+    line-height: 31px;
+}
+/* Feature section End */
+
+/* Below Feature Section Start */
+.below-feature-sec{
+    background: url('../img/background3.jpg') no-repeat center;
+    background-size: cover;
+}
+.below-feature-sec.ptb{
+    padding-top: 30px;
+}
+.below-feature-text h3 {
+    font-size: 31px;
+    font-weight: 400;
+}
+.below-feature-text h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 17px 0px;
+}
+.below-feature-text p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+    padding-right: 88px;
+}
+.shadow{
+    box-shadow: 10px 10px 20px rgba(0,0,0,1);
+}
+/* Below Feature Section End */
+
+/* Pricing Section Start */
+.pricing-sec{
+    background: url('../img/background6.jpg') no-repeat center;
+    background-size: cover;
+}
+.pricing-sec .container{
+    max-width: 1500px;
+}
+.price-box {
+    padding: 20px 15px;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+.price-box.active , .price-box.active .list-group li {
+    background-color: #0066ff !important;
+    color: #fff;
+}
+.price-box span {
+    color: #cecece;
+    font-size: 20px;
+    font-weight: 400;
+}
+.price-box h1 {
+    font-size: 60px;
+    margin-top: 25px;
+}
+.price-box h1 sup {
+    font-size: 25px;
+    position: relative;
+    top: -35px;
+}
+.price-box .list-group {
+    margin: 18px 0px;
+}
+.price-box .list-group li {
+    font-size: 18px;
+    padding: 15px;
+}
+.price-box .btn-outline-primary {
+    background-color: #fff;
+    color: #0066ff;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 10px;
+    transition: all .4s;
+}
+.price-box .btn-outline-primary:hover{
+    background-color: #0066ff;
+    color: #fff;
+}
+.price-box.active .btn-outline-primary{
+    background-color: #fff;
+    color: #0066ff;
+}
+.price-below p {
+    font-size: 20px;
+    color: #5a748d;
+    max-width: 615px;
+    margin: auto;
+    margin-top: 25px;
+}
+/* Pricing Section End */
+
+/* Client testimonial Section Start */
+.client-tes-sec{
+    background: url('../img/background2.jpg') no-repeat center;
+    background-size: cover;
+}
+.client-tes-wrap {
+    border-radius: 36px;
+}
+.client-tes-wrap h2 {
+    font-size: 71px;
+}
+.client-tes-wrap h1 {
+    font-size: 34px;
+    padding: 20px 93px;
+    color: #cccccc;
+    line-height: 1.7em;
+}
+.client-tes-wrap h3 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+.client-tes-wrap p {
+    color: #4d4d4d;
+    font-size: 23px;
+}
+/* Client testimonial Section End */
+
+/* Join Now Section Start */
+.join-now-sec{
+    background: url('../img/background4.jpg') no-repeat center;
+    background-size: cover;
+}
+.join-now-wrap h1 {
+    font-size: 36px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+.join-now-wrap p {
+    font-size: 20px;
+    color: #bcbcbc;
+}
+.join-now-wrap .btn-secondary {
+    padding: 20px 45px;
+    background: #fff;
+    color: #808080;
+    font-size: 20px;
+    border: 0px;
+    font-weight: 600;
+    border-radius: 18px;
+    margin-left: 100px;
+    transition: all .3s ease-in-out;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.join-now-wrap .btn-secondary:hover {
+   background-color: #d3d0d0;
+   color: #706c6c;
+}
+.join-now-wrap .btn-secondary::after {
+    content: "";
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #faf8fc;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+@keyframes circlePlay {
+    0%   {
+        transform: scale(0);
+        opacity: 1;
+    }
+    25%  {
+        transform: scale(.6);
+        opacity: .7;
+    }
+    50%  {
+        transform: scale(1);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+  }
+.join-now-wrap .btn-secondary:hover::after{
+    animation: circlePlay .5s ease-in-out ;
+    opacity: 0;
+    visibility: visible;
+}
+
+/* Join Now Section End */
+
+/* Contact Us Section Start */
+.contact-us{
+    background: url('../img/background3.jpg') no-repeat center;
+    background-size: cover; 
+}
+.conact-text h4 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.contact-us form{
+    position: relative;
+}
+.contact-us .form-control{
+    border: 0;
+    padding: 23px 27px;
+    border: 1px solid #eee;
+    color: #000;
+    border-radius: 11px;
+}
+.contact-us .form-control:focus{
+    box-shadow: none;
+}
+.sub-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contact-us .btn-primary {
+    position: absolute;
+    right: 13px;
+    top: 8px;
+    padding: 13px 28px;
+    border-radius: 7px;
+    transition: all .3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+.contact-us .btn-primary::after {
+    content: "";
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #faf8fc;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+@keyframes circlePlay {
+    0%   {
+        transform: scale(0);
+        opacity: 1;
+    }
+    25%  {
+        transform: scale(.6);
+        opacity: .7;
+    }
+    50%  {
+        transform: scale(1);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+  }
+.contact-us .btn-primary:hover::after{
+    animation: circlePlay .5s ease-in-out ;
+    opacity: 0;
+    visibility: visible;
+}
+
+/* Contact Us Section End */
+
+/* Footer section Start */
+.footer-sec{
+    background: url('../img/background3.jpg') no-repeat center;
+    background-size: cover; 
+}
+.footer-content p {
+    color: #688096;
+    font-size: 19px;
+}
+/* Footer section End */
+
+@media (max-width:576px) {
+    .container{
+        padding: 0px 30px;
+    }    
+}
